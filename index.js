@@ -7,6 +7,7 @@ const moment = require('moment');
 const [user, pass, tomail] = process.argv.slice(2);
 console.log('user, pass, tomail: ', user, pass, tomail);
 
+const daySTR = moment().format('yyyy-MM-DD');
 /**
  * 根据请求配置 读取数据
  */
@@ -59,9 +60,12 @@ async function transferMD2Html() {
 
   let htmlSTR = '';
   for (const file of fileList) {
-    const mdSTR = fs.readFileSync(path.resolve(__dirname, './data/' + file), {
-      encoding: 'utf8',
-    });
+    const mdSTR = fs.readFileSync(
+      path.resolve(__dirname, './data/' + daySTR + '/' + file),
+      {
+        encoding: 'utf8',
+      }
+    );
 
     const md = require('markdown').markdown;
     const mdHTML = md.toHTML(mdSTR);
@@ -90,8 +94,7 @@ async function sendMail(tomail = 'xiaoxiunique@qq.com', HTML) {
     // Comma separated list of recipients
     to: tomail,
     // Subject of the message
-    subject: '每日新闻',
-    text: 'test',
+    subject: '每日新闻 ' + daySTR,
 
     // HTML body
     html: HTML,
