@@ -31,13 +31,15 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - name: Run Project
         env:
-          BILIBILI_JCT: ${{ secrets.BILIBILI_JCT }}
-          USERID: ${{ secrets.USERID }}
-          SESSDATA: ${{ secrets.SESSDATA }}
+          USER: ${{ secrets.USER }}
+          PASS: ${{ secrets.PASS }}
+          TOMAIL: ${{ secrets.TOMAIL }}
         run:  |
           git config --local user.email "xiaoxiunique@gmail.com"
           git config --local user.name "atom.hu"
-          npm ci && node index.js ${BILIBILI_JCT} ${SESSDATA} ${USERID}
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.TOKEN }}@github.com/${{ github.repository }}
+          git pull --rebase
+          npm ci && node index.js ${USER} ${PASS} ${TOMAIL}
           git add .
           git commit -m "update by github action"
           git push
