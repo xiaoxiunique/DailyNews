@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const _ = require('lodash');
 const nodemailer = require('nodemailer');
+const moment = require('moment');
 
 const [user, pass, tomail] = process.argv.slice(2);
 console.log('user, pass, tomail: ', user, pass, tomail);
@@ -31,6 +32,14 @@ function readReqFlow() {
 }
 
 function writeData2MD(itemList, { parse, title }) {
+  const daySTR = moment().format('yyyy-MM-DD');
+  const exists = fs.existsSync(
+    path.resolve(__dirname, './data/', './' + daySTR)
+  );
+  if (!exists) {
+    fs.mkdirSync(path.resolve(__dirname, './data/', './' + daySTR));
+  }
+
   const STR = itemList.reduce((acc, item) => {
     const title = _.get(item, parse.title);
     const jumpURL = (parse.baseURL || '') + _.get(item, parse.jumpURL);
@@ -38,11 +47,15 @@ function writeData2MD(itemList, { parse, title }) {
     return acc + `\n- [${title}](${jumpURL})`;
   }, `## ${title} \n`);
 
-  fs.writeFileSync(path.resolve(__dirname, './data/' + title + '.md'), STR);
+  fs.writeFileSync(
+    path.resolve(__dirname, `./data/${daySTR}/` + title + '.md'),
+    STR
+  );
 }
 
 async function transferMD2Html() {
-  const fileList = fs.readdirSync(path.resolve(__dirname, './data'));
+  const daySTR = moment().format('yyyy-MM-DD');
+  const fileList = fs.readdirSync(path.resolve(__dirname, './data/' + daySTR));
 
   let htmlSTR = '';
   for (const file of fileList) {
