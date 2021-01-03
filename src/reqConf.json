@@ -1,0 +1,228 @@
+{
+  "requestConfList": [
+    {
+      "method": "POST",
+      "deleted": false,
+      "type": "juejinRecommend",
+      "url": "https://apinew.juejin.im/recommend_api/v1/article/recommend_all_feed?channel=App%20Store&device_id=43546451960&install_id=157936659726567&device_platform=iphone&aid=2606&device_type=iPhone%206&app_name=jj_ios",
+      "header": {
+        "Host": "apinew.juejin.im",
+        "Cookie": "_ga=GA1.2.1369589863.1598125567; odin_tt=2c07e55f9bb7865587fe7f187c86fd176fddb175d642a48e7d0966136f8109d90d10cbd3dd25686a6c1711e91655515a6f39e859f5eea9c5f78d7c94fbfed1dc",
+        "accept": "application/json",
+        "content-type": "application/json; encoding=utf-8",
+        "x-ss-cookie": "odin_tt=2c07e55f9bb7865587fe7f187c86fd176fddb175d642a48e7d0966136f8109d90d10cbd3dd25686a6c1711e91655515a6f39e859f5eea9c5f78d7c94fbfed1dc; _ga=GA1.2.1369589863.1598125567",
+        "tt-request-time": "1598548190828",
+        "user-agent": "Ã¦Â\u008eÂ\u0098Ã©Â\u0087Â\u0091 5.9.6 rv:20200824183426 (iPhone; iOS 12.1.4; zh_CN) Cronet",
+        "sdk-version": "2",
+        "passport-sdk-version": "5.4.0",
+        "x-ss-stub": "85864F984AF352ADA685CA888D930261",
+        "x-tt-trace-id": "00-30e5a7e209a23921ff8f53f6bb7b0a2e-30e5a7e209a23921-01",
+        "x-khronos": "1598548190",
+        "x-gorgon": "840260d18000ae609dc8291824b41dc90da14150136a421998cd"
+      },
+      "contentField": "data.data",
+      "parse": {
+        "title": "item_info.article_info.title",
+        "detail": "item_info.article_info.brief_content",
+        "cover": "item_info.article_info.cover_image",
+        "jumpURL": "item_info.article_info.article_id",
+        "baseURL": "https://juejin.im/post/"
+      },
+      "data": {
+        "id_type": 2,
+        "sort_type": 3,
+        "cursor": "0",
+        "client_type": 2606,
+        "limit": 20
+      },
+      "title": "掘进文章 热门推荐"
+    },
+    {
+      "method": "GET",
+      "deleted": false,
+      "type": "hotSearch",
+      "url": "https://www.zhihu.com/api/v4/search/top_search",
+      "header": {
+        "authority": "www.zhihu.com",
+        "x-zst-81": "3_2.0aR_sn77yn6O92wOB8hPZnQr0EMYxc4f18wNBUgpT67tuQ7F0K6P0Eeuy-LS9-hp1DufI-we8gGHPgJO1xuPZ0GxCTJHR7820XM20cLRGDJXfgGCBxupMuD_Ic4cpr4w0mRPO7HoY70SfquPmz93mhDQyiqV9ebO1hwOYiiR0ELYuUrxmtDomqU7ynXtOnAoTh_PhRDSTF_o_TupMiwYYPcXyeTFshwc8mqo0VU9MOhpVpGC_dUYOYgwqr9xLeiX0BLSTvLL1TggmjDgqZcNOUrLC6Lc_egVqsLpGbcc_PUNLQ7pMAu20beSqy9eMQUwffbOmEbu1IU2LxBCLwgtBjUV9QHtmYCxMmTCOXbLYUwgptBtC1R2_LhU9OqkwWqg9zUg11vU0pgwYnJxy0BYyjb90gB3xWqg_t9OCogg_wqtxghVYDCgOOUxm2eO_ChLfsTY0OUeGeqSLHuF0GTc_gJgO6DCm1UY8TGSLoHpqwwXs-BgC",
+        "x-ab-param": "zr_slotpaidexp=1;qap_question_author=0;li_vip_verti_search=0;tp_dingyue_video=0;li_video_section=1;li_sp_mqbk=0;li_paid_answer_exp=0;pf_noti_entry_num=2;tp_zrec=1;tp_contents=2;tp_topic_style=0;zr_expslotpaid=1;li_edu_page=old;se_ffzx_jushen1=0;li_panswer_topic=0;top_test_4_liguangyi=1;pf_adjust=1;qap_question_visitor= 0",
+        "x-ab-pb": "Clj0CyYMNAy1C+EL1wvkCrQAlgs/AGALtAoBCwgAdQwPDM8L4AukAOYAiQxMC60AtwBWDDcMUgubC2wA4ADcC+wKGwDFAGgAZwAHDMIAeQCLAA8LQgBHAGQMEiwAAAADAQAAAAAAAAAAAQAACwAAAAAAAAEBAQECAAAAAQAAAAABAQAAAAUAAA==",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",
+        "x-requested-with": "fetch",
+        "x-zse-86": "1.0_aRFqnv98nuFpFwtqyGF0rHLygB2fbT2q1RtBeAr0SLNY",
+        "x-zse-83": "3_2.0",
+        "sec-ch-ua": "\"Google Chrome\";v=\"87\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"87\"",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "https://www.zhihu.com/hot",
+        "accept-language": "zh-CN,zh;q=0.9",
+        "Cookie": "_xsrf=mira0C9uPBtB4xIrqNrhWZn2GBC8plRr; KLBRSID=af132c66e9ed2b57686ff5c489976b91|1609653117|1609652892"
+      },
+      "contentField": "data.top_search.words",
+      "parse": {
+        "title": "query",
+        "cover": "",
+        "detail": "display_query",
+        "jumpURL": ""
+      },
+      "title": "知乎 热搜词"
+    },
+    {
+      "method": "GET",
+      "deleted": false,
+      "type": "zhHotSearch",
+      "url": "https://www.zhihu.com/api/v3/feed/topstory/hot-lists/total?limit=50&desktop=true",
+      "header": {
+        "authority": "www.zhihu.com",
+        "x-zst-81": "3_2.0aR_sn77yn6O92wOB8hPZnQr0EMYxc4f18wNBUgpT67tuQ7F0K6P0Eeuy-LS9-hp1DufI-we8gGHPgJO1xuPZ0GxCTJHR7820XM20cLRGDJXfgGCBxupMuD_Ic4cpr4w0mRPO7HoY70SfquPmz93mhDQyiqV9ebO1hwOYiiR0ELYuUrxmtDomqU7ynXtOnAoTh_PhRDSTF_o_TupMiwYYPcXyeTFshwc8mqo0VU9MOhpVpGC_dUYOYgwqr9xLeiX0BLSTvLL1TggmjDgqZcNOUrLC6Lc_egVqsLpGbcc_PUNLQ7pMAu20beSqy9eMQUwffbOmEbu1IU2LxBCLwgtBjUV9QHtmYCxMmTCOXbLYUwgptBtC1R2_LhU9OqkwWqg9zUg11vU0pgwYnJxy0BYyjb90gB3xWqg_t9OCogg_wqtxghVYDCgOOUxm2eO_ChLfsTY0OUeGeqSLHuF0GTc_gJgO6DCm1UY8TGSLoHpqwwXs-BgC",
+        "x-ab-param": "zr_slotpaidexp=1;qap_question_author=0;li_vip_verti_search=0;tp_dingyue_video=0;li_video_section=1;li_sp_mqbk=0;li_paid_answer_exp=0;pf_noti_entry_num=2;tp_zrec=1;tp_contents=2;tp_topic_style=0;zr_expslotpaid=1;li_edu_page=old;se_ffzx_jushen1=0;li_panswer_topic=0;top_test_4_liguangyi=1;pf_adjust=1;qap_question_visitor= 0",
+        "x-ab-pb": "Clj0CyYMNAy1C+EL1wvkCrQAlgs/AGALtAoBCwgAdQwPDM8L4AukAOYAiQxMC60AtwBWDDcMUgubC2wA4ADcC+wKGwDFAGgAZwAHDMIAeQCLAA8LQgBHAGQMEiwAAAADAQAAAAAAAAAAAQAACwAAAAAAAAEBAQECAAAAAQAAAAABAQAAAAUAAA==",
+        "x-api-version": "3.0.76",
+        "sec-ch-ua-mobile": "?0",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",
+        "x-requested-with": "fetch",
+        "x-zse-86": "1.0_a7F8e0U02LSxeLS8m820NUXye_NpgBF0fM20cAr8HgYp",
+        "x-zse-83": "3_2.0",
+        "sec-ch-ua": "\"Google Chrome\";v=\"87\", \" Not;A Brand\";v=\"99\", \"Chromium\";v=\"87\"",
+        "accept": "*/*",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "https://www.zhihu.com/hot",
+        "accept-language": "zh-CN,zh;q=0.9",
+        "Cookie": "_xsrf=mira0C9uPBtB4xIrqNrhWZn2GBC8plRr; KLBRSID=af132c66e9ed2b57686ff5c489976b91|1609652981|1609652892"
+      },
+      "contentField": "data.data",
+      "title": "知乎 热搜",
+      "parse": {
+        "title": "target.title_area.text",
+        "detail": "target.excerpt_area.text",
+        "cover": "target.image_area.url",
+        "jumpURL": "target.link.url"
+      }
+    },
+    {
+      "method": "GET",
+      "title": "bilibili 每周必看",
+      "url": "https://app.bilibili.com/x/v2/show/popular/selected?type=weekly_selected&number=79",
+      "type": "bilibili_recommend",
+      "contentField": "data.data.list",
+      "deleted": false,
+      "header": {
+        "Host": "app.bilibili.com",
+        "accept": "application/json, text/plain, */*",
+        "origin": "https://www.bilibili.com",
+        "referer": "https://www.bilibili.com/h5/weekly-recommend?num=75&navhide=1",
+        "dnt": "1",
+        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1",
+        "accept-language": "zh-cn",
+        "Cookie": "bfe_id=61a513175dc1ae8854a560f6b82b37af"
+      },
+      "parse": {
+        "title": "title",
+        "cover": "cover",
+        "jumpURL": "bvid",
+        "detail": "rcmd_reason",
+        "baseURL": "https://www.bilibili.com/video/"
+      }
+    },
+    {
+      "method": "GET",
+      "title": "央视新闻 推荐",
+      "url": "http://api.cportal.cctv.com/api/rest/articleInfo/getScrollList?n=100&version=1&app_version=807",
+      "type": "newRecommend",
+      "contentField": "data.itemList",
+      "deleted": false,
+      "header": {
+        "Host": "api.cportal.cctv.com",
+        "Accept": "*/*",
+        "User-Agent": "iPhone6",
+        "Accept-Language": "zh-cn"
+      },
+      "parse": {
+        "title": "itemTitle",
+        "detail": "operate_time",
+        "cover": "itemImage.imgUrl1",
+        "jumpURL": "detailUrl"
+      },
+      "data": ""
+    },
+    {
+      "method": "POST",
+      "title": "幕布 推荐",
+      "url": "https://mubu.com/api/community/query_document",
+      "type": "mubuRecommend",
+      "contentField": "data.data.rows",
+      "deleted": false,
+      "data": "page=1&tagId=&title=&type=&docRecommend=1",
+      "header": {
+        "Host": "mubu.com",
+        "Cookie": "_ga=GA1.2.607708176.1595818978; mubu_inner=1; data_unique_id=3533ae0e-455d-4bae-8273-9f26db7ef4f7; Jwt-Token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJhcHAiOiJtdWJ1Iiwic3ViIjoiMzQxNzMxMiIsImV4cCI6MTYwMTAzNzM4MCwiaWF0IjoxNTk4NDQ1MzgwfQ.RnPGAipB2cgNEWBUma4wF3bHRpfcKReRuJ4ovY5tf9n7OqZ0Bi3mkyc-NrbNH2jbo1kwUAUNkf8ZiqnTv7fhrg; user_persistence=c9209f13-3d1e-455b-9c4e-ffcb68ec380e; language=en-US; country=US; csrf_token=8cb982ca-ee52-4791-be14-e6d5d00150c2; reg_entrance=https%3A%2F%2Fmubu.com%2Flist; SESSION=bb4d03f1-83b2-4886-acf7-838f3c8bde6b; Hm_lvt_4426cbb0486a79ea049b4ad52d81b504=1597925579,1598919662,1599202384,1599455152; s_v_web_id=kes2atp2_wnl4G5bT_fsy6_4CrR_9JCB_Qhxa9HCJ917b; Hm_lpvt_4426cbb0486a79ea049b4ad52d81b504=1599455251; SLARDAR_WEB_ID=cf1fa145-bc3c-4875-bf98-6efc4c2311e6",
+        "accept": "application/json, text/javascript, */*; q=0.01",
+        "origin": "https://mubu.com",
+        "x-requested-with": "XMLHttpRequest",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36",
+        "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "referer": "https://mubu.com/explore",
+        "accept-language": "zh-CN,zh;q=0.9,en;q=0.8"
+      },
+      "parse": {
+        "title": "title",
+        "detail": "summary",
+        "baseURL": "https://mubu.com/doc/explore/",
+        "jumpURL": "id"
+      }
+    },
+    {
+      "method": "GET",
+      "title": "csdn 推荐",
+      "url": "https://www.csdn.net/api/articles?type=more&category=home&shown_offset=1599491669107896",
+      "type": " csdn",
+      "contentField": "data.articles",
+      "deleted": false,
+      "data": "",
+      "header": {
+        "Host": "www.csdn.net",
+        "Cookie": "uuid_tt_dd=10_17078700580-1599049886151-520137; dc_session_id=10_1599049886151.673564; Hm_ct_6bcd52f51e9b3dce32bec4a3997715ac=6525*1*10_17078700580-1599049886151-520137; __gads=ID=33af2149ac4d6b6b:T=1599049887:S=ALNI_MZXWv7fUjyfte6ADwyqjhITDodwzA; _ga=GA1.2.1507117694.1599049888; c-login-auto-interval=1599322846995; c-login-auto=2; Hm_lvt_6bcd52f51e9b3dce32bec4a3997715ac=1599322703,1599322847,1599322883,1599323023; Hm_up_6bcd52f51e9b3dce32bec4a3997715ac=%7B%22islogin%22%3A%7B%22value%22%3A%220%22%2C%22scope%22%3A1%7D%2C%22isonline%22%3A%7B%22value%22%3A%220%22%2C%22scope%22%3A1%7D%2C%22isvip%22%3A%7B%22value%22%3A%220%22%2C%22scope%22%3A1%7D%7D; dc_sid=216d6349c35f55f478e98ba44bf43e6a; TY_SESSION_ID=45eb94f1-367e-43bb-8367-616ccc707d83; c_ref=https%3A//www.baidu.com/link; c_first_ref=www.baidu.com; c_first_page=https%3A//www.csdn.net/; dc_tos=qganov",
+        "accept": "application/json, text/javascript, */*; q=0.01",
+        "x-requested-with": "XMLHttpRequest",
+        "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
+        "x-tingyun-id": "im-pGljNfnc;r=491695788",
+        "sec-fetch-site": "same-origin",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-dest": "empty",
+        "referer": "https://www.csdn.net/",
+        "accept-language": "zh-CN,zh;q=0.9,en;q=0.8"
+      },
+      "parse": {
+        "jumpURL": "url",
+        "title": "title"
+      }
+    },
+    {
+      "method": "GET",
+      "title": "weibo",
+      "url": "https://api.weibo.cn/2/page?gsid=_2A25ydcqEDeRxGeNL41sY8SzPyTWIHXVvI1lMrDV6PUJbkdAKLXHCkWpNSNlRDjXi2bIYSBJn6-uis29xtLEdCk40&sensors_mark=0&wm=3333_2001&launchid=10000365--x&sensors_is_first_day=false&from=10A9293010&b=0&c=iphone&networktype=wifi&skin=default&v_p=86&s=5c122222&v_f=1&sensors_device_id=D496EC12-EFC5-440B-99D2-5941E3383E21&lang=zh_CN&sflag=1&ua=iPhone7,2__weibo__10.9.2__iphone__os12.1.4&ft=0&aid=01A_SfGJvxrqZnGEFxSrGiz9Kd8ZBt_pAMUOKCS2iXFCfuQ8Q.&oriuicode=10000010&extparam=pos%253D0_0%2526filter_type%253Drealtimehot%2526mi_cid%253D100103%2526cate%253D10103%2526position%253D%25257B%252522objectid%252522%25253A%2525228008651010000000000%252522%25252C%252522name%252522%25253A%252522%25255Cu6210%25255Cu90fd%252522%25257D%2526c_type%253D30%2526display_time%253D1601289014&orifid=231619&count=20&luicode=10000010&containerid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot&fid=106003type%253D25%2526t%253D3%2526disable_hot%253D1%2526filter_type%253Drealtimehot&uicode=10000011&st_bottom_bar_new_style_enable=1&need_new_pop=1&page=1&client_key=bf5b427f70e1d890c18076fe807a7c4b&lfid=231619&moduleID=pagecard&page_interrupt_enable=0",
+      "type": "weiboHot",
+      "contentField": "data.cards[0].card_group",
+      "deleted": false,
+      "header": {
+        "Host": "api.weibo.cn",
+        "x-sessionid": "91667CD5-A334-473F-95D5-97CA61AC518F",
+        "cronet_rid": "6916444",
+        "snrt": "normal",
+        "x-log-uid": "5589912329",
+        "x-validator": "us38ywO9WHEJyViY9cgXSoU+Kk9E9/zBeWMx5lu/lQQ=",
+        "user-agent": "Weibo/47486 (iPhone; iOS 12.1.4; Scale/2.00)",
+        "authorization": "WB-SUT _2A95ydcqEDeRxGeNL41sY8SzPyTWIHXVvI1lMrDV6PUJbkdAKLU3HkWpNSNlRDnWRfHvy0C4kJchBKiEweCfKLYMK",
+        "accept": "*/*"
+      },
+      "parse": {
+        "title": "desc"
+      }
+    }
+  ]
+}
