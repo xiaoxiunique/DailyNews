@@ -106,31 +106,6 @@
     },
     {
       "method": "GET",
-      "title": "bilibili 每周必看",
-      "url": "https://app.bilibili.com/x/v2/show/popular/selected?type=weekly_selected&number=79",
-      "type": "bilibili_recommend",
-      "contentField": "data.data.list",
-      "deleted": false,
-      "header": {
-        "Host": "app.bilibili.com",
-        "accept": "application/json, text/plain, */*",
-        "origin": "https://www.bilibili.com",
-        "referer": "https://www.bilibili.com/h5/weekly-recommend?num=75&navhide=1",
-        "dnt": "1",
-        "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1",
-        "accept-language": "zh-cn",
-        "Cookie": "bfe_id=61a513175dc1ae8854a560f6b82b37af"
-      },
-      "parse": {
-        "title": "title",
-        "cover": "cover",
-        "jumpURL": "bvid",
-        "detail": "rcmd_reason",
-        "baseURL": "https://www.bilibili.com/video/"
-      }
-    },
-    {
-      "method": "GET",
       "title": "央视新闻 推荐",
       "url": "http://api.cportal.cctv.com/api/rest/articleInfo/getScrollList?n=100&version=1&app_version=807",
       "type": "newRecommend",
